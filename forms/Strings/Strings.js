@@ -8,10 +8,12 @@ let authorString =   "- Henry Ford"
 let completeString = quoteString + authorString
 alert(completeString )
 
-let found = 
+let found = completeString.includes("Henry") 
 
-if found = true {
-
+if (found = true) {
+console.log("Henry was in the quote string")
+} else {
+  console.log("Henry was NOT in the quote string")
 }
 
 let secondQuote = "Talent is cheaper than table salt. What separates the talented individual from the successful one is a lot of hard work. - Stephen King"
